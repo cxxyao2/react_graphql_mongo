@@ -19,3 +19,27 @@
 
   border-radius: 4px 4px 0 0;
 }
+
+form .field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+form label {
+  text-align: right;
+  padding: 6px;
+}
+
+form input,
+form input {
+  margin: 4px;
+  padding: 6px;
+}
+
+form .field_comment {
+  margin: 4px 0px 4px 30px;
+  padding: 6px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}

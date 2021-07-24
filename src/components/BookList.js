@@ -13,7 +13,7 @@ function BookList() {
   if (loadingError) return <div>{JSON.stringify(loadingError)}</div>;
 
   return (
-    <div className="container">
+    <div className="card">
       <div>
         <h1>Book List</h1>
 

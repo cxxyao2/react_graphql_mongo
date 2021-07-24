@@ -3,25 +3,6 @@ import { useMutation, useQuery } from '@apollo/client';
 import { AddBook, GetBooksQuery } from '../queries/queries';
 import './AddOneBook.css';
 
-// function BookList(props) {
-//   let inputName;
-//   let inputGenre;
-//   let inputAuthorId;
-//   const [addBook, { data }] = useMutation(AddBook);
-
-//   return (
-//     <div className="container">
-//       <form
-//         onSubmit={(e) => {
-//           e.preventDefault();
-//           addBook({
-//             variables: {
-//               name: inputName.value,
-//               genre: inputGenre.value,
-//               authorId: inputAuthorId.value,
-//             },
-//           });
-
 function AddOneBook(props) {
   const [addBook, { data }] = useMutation(AddBook);
   const { loading, error, data: booklist } = useQuery(GetBooksQuery);
@@ -46,7 +27,7 @@ function AddOneBook(props) {
       <div className="input_area">
         <form onSubmit={(e) => addBookByClick(e)}>
           <h3>Add a new book</h3>
-          <div>
+          <div className="field">
             <label>Book Name:</label>
             <input
               placeholder="enter book name"
@@ -54,7 +35,7 @@ function AddOneBook(props) {
               ref={(node) => (bookName = node)}
             />
           </div>
-          <div>
+          <div className="field">
             <label>Book Genre:</label>
             <input
               placeholder="enter book genre"
@@ -62,7 +43,7 @@ function AddOneBook(props) {
               ref={(node) => (bookGenre = node)}
             />
           </div>
-          <div>
+          <div className="field">
             <label>Author Id:</label>
             <input
               placeholder="enter author id"
@@ -70,10 +51,10 @@ function AddOneBook(props) {
               ref={(node) => (authorId = node)}
             />
           </div>
-          <div>
-            <small>60fb5e9216313d8298f0799a</small>
+          <div className="field_comment">
+            Example:&nbsp; 60fb5e9216313d8298f0799a
           </div>
-          <button type="submit">Add Book</button>
+          <button type="submit">+</button>
         </form>
       </div>
       <div className="show_area">
