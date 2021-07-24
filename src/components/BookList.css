@@ -1,0 +1,8 @@
+.input_group {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container {
+  border: 1px solid red;
+}

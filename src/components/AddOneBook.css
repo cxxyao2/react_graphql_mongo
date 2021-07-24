@@ -1,0 +1,21 @@
+.add_container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+  justify-items: start;
+}
+
+.input_area {
+  height: 100%;
+
+  border-radius: 0 0 4px 4px;
+}
+
+.show_area {
+  height: 100%;
+  overflow-y: auto;
+
+  border-radius: 4px 4px 0 0;
+}
