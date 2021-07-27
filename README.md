@@ -7,7 +7,7 @@
 ## back-end
 
 - node.js + express + mongoose + graphQL
-- [baack end source code is located at ]/(https://github.com/cxxyao2/graphql_mongo1)
+- [back end source code is located at ]/(https://github.com/cxxyao2/graphql_mongo1)
 
 ## screenshot
 
